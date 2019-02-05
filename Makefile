@@ -6,7 +6,7 @@
 #    By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/24 15:46:50 by vkhomenk          #+#    #+#              #
-#    Updated: 2019/02/05 17:32:53 by vkhomenk         ###   ########.fr        #
+#    Updated: 2019/02/05 19:07:41 by vkhomenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ LIBFT			:= $(LIB_DIR)libft.a
 LIBFT_DIR		:= $(LIB_DIR)libft/
 LIBFT_INC		:= $(LIBFT_DIR)includes/
 
-LIBFT_FLAGS 	:=  -lft -L $(LIBFT_DIR)
+LIBFT_FLAGS 	:= -lft -L $(LIBFT_DIR)
 CC_FLAGS		:= -Wall -Wextra -Werror
 LINK_FLAGS		:= $(LIBFT_FLAGS)
 HEADER_FLAGS	:= -I $(INC_DIR)  -I $(LIBFT_INC)
