@@ -6,7 +6,7 @@
 #    By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/24 15:46:50 by vkhomenk          #+#    #+#              #
-#    Updated: 2019/02/03 18:49:11 by vkhomenk         ###   ########.fr        #
+#    Updated: 2019/02/05 17:32:53 by vkhomenk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ $(OBJ_DIR):
 	mkdir $(OBJ_DIR)
 
 $(OBJ_DIR)%.o: %.c
-	$(CC) -o $@ -c $< $(CC_FLAGS) $(HEADER_FLAGS)
+	$(CC) $(CC_FLAGS) -o $@ -c $< $(HEADER_FLAGS)
 
 $(LIBFT):
 	make -C $(LIBFT_DIR)
