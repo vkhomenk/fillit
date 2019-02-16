@@ -6,7 +6,7 @@
 /*   By: vkhomenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 14:37:08 by vkhomenk          #+#    #+#             */
-/*   Updated: 2018/12/26 12:22:23 by vkhomenk         ###   ########.fr       */
+/*   Updated: 2019/02/16 04:21:42 by vkhomenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_memdel(void **ap)
 {
-	if (!ap)
+	if (!ap || !*ap)
 		return ;
 	free(*ap);
 	*ap = NULL;
